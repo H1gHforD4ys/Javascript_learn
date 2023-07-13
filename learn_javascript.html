@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    //Nhập dữ/xuất dữ liệu
+    // var tuoi = 20;
+    // var ten = "Dao Tuan Kiet";
+    // var zin = false
+    // //document.write("depzai");
+    // ten = window.prompt("Nhập tên người yêu của bạn: ");
+    // ten = "I love " + ten;
+    // document.write(ten);
+
+    // //Cấu trúc if/else
+    // var tuoi = 0 ;
+    // tuoi = parseInt(window.prompt("Nhập tuổi: ")); // đổi thành dạng int
+    // if(tuoi >= 16)
+    // {
+    //     document.write("<br>Hợp lí");
+    // }
+    // else{
+    //     document.write("<br>Thôi");
+    // }
+
+    // //Vòng for
+    // for (var i = 0 ; i <= tuoi ; i++){
+    //     document.write("<br>" + i + " lần");
+    // }
+
+    //Kiểu object
+    var co_hang_xom = {
+        ten : "Bưởi",
+        tuoi : 30,
+        hon_nhan : true,
+        diachi: {
+            phong : "1011",
+            toa : "N4A trung hòa Nhân Chính"
+        }
+    }
+    document.write(co_hang_xom.ten + " " + co_hang_xom.diachi.phong + " " + co_hang_xom.diachi.toa);
+    
+    //Kiểu function
+    var tinh_tuoi = function(nam_sinh) {
+        var tuoi = 2023 - nam_sinh;
+        document.write("<br>" + tuoi);
+    };
+
+    tinh_tuoi(2001);
+    tinh_tuoi(2000);
+
+    //Kiểu array
+    var a = ["Nhím", "Thỏ",123,false];
+    document.write("<br>" + a[0]);
+    document.write("<br>" + a.length);
+    a.push("Kiệt");
+    document.write("<br> Sau Khi push " + a.length);
+    a.pop();
+</script>
